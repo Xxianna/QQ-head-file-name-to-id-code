@@ -68,8 +68,8 @@ PS yourpath> ./md5test.exe
 ```
 活动代码页: 936
 Usage: 
-根据文件名获取qq号：D:\手机图片导出\qq_friends_info\md5test.exe [文件名] [最大猜测QQ号] [最小猜测QQ号]
-根据qq号获取文件名：D:\手机图片导出\qq_friends_info\md5test.exe [qq号]
+根据文件名获取qq号：yourpath\md5test.exe [文件名] [最大猜测QQ号] [最小猜测QQ号]
+根据qq号获取文件名：yourpath\md5test.exe [qq号]
 ```
 文件名只需要包含前32位即可（MD5），后面可删可不删
 
